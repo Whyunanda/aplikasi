@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="80dp"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nama Lengkap"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="UserName"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nama"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/txt_tglahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal Lahir"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <EditText
+        android:id="@+id/P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/edt_konfirpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Konfirmasi Password"
+        app:layout_constraintTop_toBottomOf="@+id/P"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        app:layout_constraintTop_toBottomOf="@+id/edt_konfirpw"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/edt_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="No HP"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="594dp" />
+
+    <EditText
+        android:id="@+id/edt_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Alamat"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="657dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
